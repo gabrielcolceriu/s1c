@@ -1,0 +1,15 @@
+{
+  "name": "Broadlink S1C Python",
+  "version": "0.0.1",
+  "slug": "s1c",
+  "description": "Hass.io addon for the Broadlink Python S1C Script.",
+  "startup": "application",
+    "boot": "auto",
+    "ports": {"5055/tcp": null},
+    "options": {"code": null,
+	        "requirements": []},
+    "schema": {"code": "str",
+	       "requirements": ["str"],
+	       "clean": "bool?"},
+    "map": ["share"]
+}
