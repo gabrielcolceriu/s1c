@@ -9,15 +9,15 @@ py2-pip \
 clang \
 libgcc \
 gcc-gnat \
-RUN apk add --no-cache libgc++ 
-RUN apk add --no-cache g++ 
-RUN apk add --no-cache make 
-RUN apk add --no-cache libffi-dev 
-RUN apk add --no-cache openssl-dev 
-RUN apk add --no-cache python2-dev
-RUN apk add --no-cache mosquitto
-RUN apk add --no-cache mosquitto-dev
-RUN apk add --no-cache mosquitto-libs
+libgc++ \
+g++ \
+make \
+libffi-dev \
+openssl-dev \
+python2-dev \
+mosquitto \
+mosquitto-dev \
+mosquitto-libs \
 RUN pip install pyaes
 RUN pip install broadlink
 RUN pip install pycrypto
