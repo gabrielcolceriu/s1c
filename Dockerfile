@@ -4,11 +4,11 @@ FROM $BUILD_FROM
 # Add env
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache jq 
-RUN apk add --no-cache py2-pip 
-RUN apk add --no-cache clang 
-RUN apk add --no-cache libgcc 
-RUN apk add --no-cache gcc-gnat 
+RUN apk add --no-cache jq \
+py2-pip \
+clang \
+libgcc \
+gcc-gnat \
 RUN apk add --no-cache libgc++ 
 RUN apk add --no-cache g++ 
 RUN apk add --no-cache make 
